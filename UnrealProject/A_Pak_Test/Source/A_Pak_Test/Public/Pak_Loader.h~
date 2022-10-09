@@ -1,0 +1,38 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "Kismet/BlueprintFunctionLibrary.h"
+#include "Runtime/PakFile/Public/IPlatformFilePak.h"
+#include "Pak_Loader.generated.h"
+
+/**
+ * 
+ */
+UCLASS()
+class A_PAK_TEST_API UPak_Loader : public UBlueprintFunctionLibrary
+{
+	GENERATED_BODY()
+
+public:
+
+	FPakPlatformFile* PakPlatform;
+
+	static bool InitLoaderPakPlatformFile(class FPakPlatformFile* PakPlatform);
+
+	UFUNCTION(BlueprintCallable)
+		static void TryLoadingAssetFromPath(FString Path);
+
+	UFUNCTION(BlueprintCallable)
+		static void RunLoadingTestOnPakFile(FString PakFilePath);
+
+	UFUNCTION(BlueprintCallable)
+		static bool HasPakFileAlreadyBeenLoaded(FString PakFilePath);
+
+	static void TestPakFileIterationAndLoading(FString PakFilePath, FString PakMountDirectory);
+
+	static bool LoadPakFileAndAddToRegistry(class FPakPlatformFile* PakPlatform, FString PakFilePath, FString PakMountDirectory);
+
+	static class FPakPlatformFile* LoadPakFileAndAddToRegistry(FString PakFilePath, FString PakMountDirectory);
+};

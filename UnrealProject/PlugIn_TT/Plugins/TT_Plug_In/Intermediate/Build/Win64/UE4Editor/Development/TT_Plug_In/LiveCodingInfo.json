@@ -1,0 +1,13 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.TT_Plug_In.cpp.obj": [
+			"PakFile.cpp.obj",
+			"TT_Plug_In.cpp.obj"
+		],
+		"Module.TT_Plug_In.gen.cpp.obj": [
+			"PakFile.gen.cpp.obj",
+			"TT_Plug_In.init.gen.cpp.obj"
+		]
+	}
+}

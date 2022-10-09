@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-TT_Plug_In-0007.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Project\UnrealProject\PlugIn_TT\Intermediate\Build\Win64\PlugIn_TTEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\Project\UnrealProject\PlugIn_TT\Plugins\TT_Plug_In\Intermediate\Build\Win64\UE4Editor\Development\TT_Plug_In\Module.TT_Plug_In.cpp.obj"
+"D:\Project\UnrealProject\PlugIn_TT\Plugins\TT_Plug_In\Intermediate\Build\Win64\UE4Editor\Development\TT_Plug_In\Module.TT_Plug_In.gen.cpp.obj"
+"D:\Project\UnrealProject\PlugIn_TT\Plugins\TT_Plug_In\Intermediate\Build\Win64\UE4Editor\Development\TT_Plug_In\Default.rc2.res"
+/OUT:"D:\Project\UnrealProject\PlugIn_TT\Plugins\TT_Plug_In\Intermediate\Build\Win64\UE4Editor\Development\TT_Plug_In\UE4Editor-TT_Plug_In-0007.lib"
